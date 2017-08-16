@@ -17,12 +17,16 @@ var panditas = document.getElementById('contPanda');
 		 	panditas.appendChild(myDiv);
 	 }
 
+document.getElementById("restaurar").addEventListener("click", restaurarImagen);
+document.getElementById("extintionBtn").addEventListener("click", extincionText);
+document.getElementById("origenBtn").addEventListener("click", origenText);
+var extincion = document.getElementById('extincion');
+var origen = document.getElementById('origen');
+
 function eliminar(event) {
 
 	event.parentNode.style.display = "none";
  }
-
-document.getElementById("restaurar").addEventListener("click", restaurarImagen);
 
  function restaurarImagen () {
  	var pictures = document.getElementsByClassName('contImg');
@@ -30,3 +34,17 @@ document.getElementById("restaurar").addEventListener("click", restaurarImagen);
 		pictures[i].style.display = 'inline-block';
 	}
  }
+function origenText() {
+	if(origen.style.display=='none'){
+		origen.style.display='block';
+	} else {
+		origen.style.display='none';
+	}
+}
+ function extincionText (){
+	if(extincion.style.display=='none'){
+		extincion.style.display='block';
+	} else {
+		extincion.style.display='none';
+	}
+}

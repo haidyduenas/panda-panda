@@ -72,30 +72,28 @@ ul li a {
 
 
  /* Contenido del parrafo */
-
-.contenedortxt{
-	width: 70%;
-	margin:0 auto;
-}
- .contParrafo {
- 	display: inline-block;
- 	width: 50%;
+.contenedortxt {
+	width :900px;
+ 	height: 700px;
 	padding: 10px;
+	margin: 0 auto;
 	color: white;
 	text-align: justify;
- }
+}
 
- #origen {
+ #origen{
+ 	float: left;
  	width :400px;
- 	display: inline-block;
+ 	height: 300px;
+ 	display: block;
  	vertical-align: top;
  }
 
  #extincion {
- 	float: left;
+  	float: right;
  	width :400px;
  	height: 300px;
- 	display: inline-block;
+ 	display: block;
  	vertical-align: top;
  }
 
